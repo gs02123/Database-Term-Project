@@ -1,3 +1,4 @@
+
 <meta charset="UTF-8">
 <HTML>
  <HEAD>
@@ -9,7 +10,7 @@
   
  </HEAD>
  <BODY bgcolor="#EAEAEA">
- <?php include("header.php"); ?> 
+ <?php include("adminheader.php"); ?> 
  <font face="Yang Rounded">
    
   <table width="1000px" height="600px" align="center" border=1>
@@ -17,10 +18,11 @@
  <td align="center"><img src="beer.jpg" align="center"></td>
   </tr>
   <tr>
- <td>$_COOKIE['ctk']</td>
+ <td>판례DB</td>
   </tr>
 </table>
  </BODY>
 </HTML>
+
 
 

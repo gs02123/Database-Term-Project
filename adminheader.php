@@ -10,7 +10,7 @@
 <form action="prosearch.php" method="post">
     <div class='navbar fixed'>
         <div class='container'>
-            <a class='pull-left title' href="greeting.php">판례DB</a>
+            <a class='pull-left title' href="admingreeting.php">판례DB</a>
             <ul class='pull-right'>
                 <li>
                     <input type="text" name="search_keyword" placeholder="검색하세요">
@@ -18,12 +18,10 @@
                 </li>
                 <li><a href='product_list.php'>판례 목록</a></li>
                 <li><a href='searchmain2.php'>판례 검색</a></li>
-                <li><a href='lawyersearchmain.php'>로펌 별 변호사 찾기</a></li>
-                <li><a href='ordermain.php'>주문신청</a></li>
-                <li><a href='orderlistformember.php'>주문조회</a></li>
-                <li><a href='orderdeletemain.php'>주문삭제</a></li>
-                <li><a href='casemain.php'>사건의뢰</a></li>
-                <li><a href='signOut.php'>로그아웃 하기</a></li>
+                <li><a href='trialmanage.php'>판례 관리</a></li>
+                <li><a href='order_list.php'>주문 조회</a></li>
+                <li><a href='casesubmit_list.php'>사건 접수 조회</a></li>
+                <li><a href='adminsignout.php'>로그아웃 하기</a></li>
             </ul>
         </div>
     </div>

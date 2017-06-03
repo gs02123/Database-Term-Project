@@ -1,6 +1,6 @@
 <?php
-    include "../include/session.php";
     include "../include/dbConnect.php";
+
  
     $memberId = $_POST['memberId'];
     $memberPw = md5($memberPw = $_POST['memberPw']);
@@ -11,12 +11,12 @@
  
         $row = $res->fetch_array(MYSQLI_ASSOC);
  
- 
-        if ($row != null) {
-            $_SESSION['ses_userid'] = $row['memberId'];
-            echo $_SESSION['ses_userid'].'님 안녕하세요';
+ if ($row != null) {
+        
+            setcookie('ctk',$row['memberId']);
+            echo $_COOKIE['ctk'];
             echo '<a href="./signOut.php">로그아웃 하기</a>';
-            echo "<meta http-equiv='refresh' content='1; URL=greeting.php?no=0'>";
+             echo "<meta http-equiv='refresh' content='1; URL=greeting.php?no=0'>";
         }
  
         if($row == null){
